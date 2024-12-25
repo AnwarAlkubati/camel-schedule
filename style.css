@@ -1,0 +1,123 @@
+/* تنسيق النصوص والخلفية */
+/* تنسيق النصوص والخلفية */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    color: #4a3622;
+
+    /* إضافة الخلفية */
+    background: url('images/camel-background.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+
+/* تنسيق الهيدر */
+header {
+    background-color: #f2c94c;
+    color: #4a3622;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 5px solid #e3a827;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* تنسيق الأقسام */
+section {
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff8e5;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 22px;
+    color: #4a3622;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #f9e4b7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الفوتر */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4a3622;
+    color: #f2c94c;
+    margin-top: 20px;
+    border-top: 5px solid #e3a827;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* تنسيق النموذج */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff8e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #4a3622;
+}
+
+form input, form select {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #f2c94c;
+    color: #4a3622;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e3a827;
+}
+
+

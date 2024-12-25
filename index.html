@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entaj - موقع التلقيح</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+</head>
+<body>
+    <!-- الشمس -->
+    <div class="sun"></div>
+
+    <!-- الجبال -->
+    <div class="mountain"></div>
+    <div class="mountain"></div>
+    <div class="mountain"></div>
+
+    <header> 
+        <h1>أهلًا بكم في موقع</h1> 
+        <h2>Entaj</h2> 
+        <p>هنا يمكن لملاك الإبل تحديد مواعيد التلقيح مع ملاك الإبل الأنثوية</p> 
+      </header>
+    <section>
+        <h2>خدماتنا</h2>
+        <ul>
+            <li>تحديد المواعيد بسهولة</li>
+            <li>معلومات عن الإبل (السلالة، الهرمونات، السعر، ...)</li>
+        </ul>
+    </section>
+
+    <!-- نموذج تحديد الموعد -->
+    <section>
+        <h2>حدد موعد التلقيح</h2>
+        <form id="booking-form">
+            <label for="name">اسم صاحب الإبل:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="camel-type">نوع الإبل:</label>
+            <input type="text" id="camel-type" name="camel-type" required>
+            <label for="camel-male">اختار الذكر المناسب:</label>
+<select id="camel-male" name="camel-male">
+    <option value="male1">ذكر 1 - السلالة: البلدي، الهرمونات: مرتفعة</option>
+    <option value="male2">ذكر 2 - السلالة: الصحراء، الهرمونات: متوسطة</option>
+    <option value="male3">ذكر 3 - السلالة: الهجن، الهرمونات: عالية</option>
+</select><br><br>
+
+            
+            <label for="appointment-date">تاريخ الموعد:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="time">الوقت:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="حدد الموعد">
+        </form>
+    </section>
+    <body>
+        <section>
+            <h2>الذكور المتاحين للتلقيح</h2>
+            <ul>
+                <li>ذكر 1 - الهرمونات: مرتفعة - السلالة: البلدي</li>
+                <li>ذكر 2 - الهرمونات: متوسطة - السلالة: الصحراء</li>
+                <li>ذكر 3 - الهرمونات: عالية - السلالة: الهجن</li>
+            </ul>
+        </section>
+        <section>
+            <h2>المواعيد المحفوظة</h2>
+            <ul id="appointments-list">
+                <!-- سيتم إضافة المواعيد هنا باستخدام JavaScript -->
+            </ul>
+        </section>
+    </body>
+    <footer>
+        <p>© 2024 Entaj - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
